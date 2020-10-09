@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My library</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./book.css"
+      href="https://fonts.googleapis.com/css2?family=Lobster&display=swap"
+    />
+  </head>
+  <body
+    style="
+      background-image: url(library-pic.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+    "
+  >
+    <h1>Open-Minded Book Store</h1>
+    <div class="open-btn">
+      <button class="open-button" onclick="openForm()">
+        Create a New Book
+      </button>
+    </div>
+
+    <div class="userInput">
+      <div class="form-popup" id="myForm">
+        <form class="inputForm">
+          <label>Title</label><br />
+          <input
+            type="text"
+            name="title"
+            id="titleInput"
+            placeholder="title of the book"
+            <br
+          />
+          <label>Author</label><br />
+          <input
+            type="text"
+            name="author"
+            id="authorInput"
+            placeholder="full names of the author"
+          /><br /><br />
+          <label>Pages</label><br />
+          <input
+            type="number"
+            name="pages"
+            id="pagesInput"
+            placeholder="pages in the book"
+          /><br /><br />
+          <label>Read</label>
+          <input type="checkbox" id="readCheckBox" />
+
+          <input type="button" value="SEND" id="buttonInput" class="sendBtn" />
+          <button type="submit" class="clearBtn" value="Clear">Cancel</button>
+        </form>
+      </div>
+    </div>
+
+    <div id="main"></div>
+
+    <script src="./book.js"></script>
+  </body>
+</html>

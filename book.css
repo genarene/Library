@@ -1,0 +1,159 @@
+#main {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  column-gap: 15px;
+  row-gap: 20px;
+  margin-top: 4em;
+  padding: 1em;
+}
+
+h1 {
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  font-family: "Lobster", cursive;
+  font-size: 60px;
+  text-shadow: 4px 4px 4px #aaa;
+}
+.form-popup {
+  display: none;
+
+  position: absolute;
+  left: 100px;
+  top: 200px;
+  bottom: 15px;
+  right: 15px;
+
+  z-index: 3;
+  margin-top: 1%;
+}
+.open-btn {
+  display: flex;
+  justify-content: center;
+}
+.open-button {
+  background-color: whitesmoke;
+  color: black;
+  font-family: "Lobster", cursive;
+  font-size: 2em;
+  font-weight: bold;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  margin: auto;
+  left: 480px;
+  top: 150px;
+  bottom: 23px;
+  right: 28px;
+  width: 290px;
+  height: 8%;
+  border-radius: 12px;
+}
+.open-button:hover {
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+.inputForm {
+  width: 30%;
+  padding: 10px;
+  background-color: white;
+}
+
+.inputForm input[type="text"],
+.inputForm input[type="text"],
+.inputForm input[type="number"] {
+  width: 80%;
+  padding: 20px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+  font-weight: bold;
+}
+
+.inputForm input[type="text"]:focus,
+.inputForm input[type="password"]:focus {
+  background-color: cyan;
+  outline: none;
+}
+
+.inputForm .sendBtn {
+  box-sizing: border-box;
+  border-radius: 12px;
+  height: 18%;
+  width: 48%;
+  background-color: cyan;
+  color: black;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-weight: bold;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom: 10px;
+  opacity: 0.8;
+}
+
+.clearBtn {
+  box-sizing: border-box;
+  border-radius: 12px;
+  height: 18%;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  width: 48%;
+  font-weight: bold;
+  background-color: orangered;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom: 10px;
+  opacity: 0.8;
+}
+
+.inputForm .sendBtn:hover,
+.clearBtn:hover,
+.delete-btn:hover {
+  opacity: 5;
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+.delete-btn {
+  background-color: orangered;
+  color: whitesmoke;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 1em;
+  padding: 6px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  margin: auto;
+
+  border-radius: 12px;
+}
+
+.div-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  align-items: center;
+  border-radius: 1em;
+  padding: 1em;
+  box-shadow: 4px 4px 4px #aaa;
+  font-family: "Lobster", cursive;
+
+  /* background-color: cyan; */
+  background-color: #eec0c6;
+  background-image: linear-gradient(315deg, #eec0c6 0%, #7ee8fa 74%);
+}
+
+.read-status {
+  font-size: 1.5em;
+}
+
+h2 {
+  text-shadow: 4px 4px 4px whitesmoke;
+}
