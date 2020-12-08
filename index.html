@@ -34,6 +34,7 @@
             name="title"
             id="titleInput"
             placeholder="title of the book"
+            required
             <br
           />
           <label>Author</label><br />
@@ -42,6 +43,7 @@
             name="author"
             id="authorInput"
             placeholder="full names of the author"
+            required
           /><br /><br />
           <label>Pages</label><br />
           <input
@@ -49,11 +51,12 @@
             name="pages"
             id="pagesInput"
             placeholder="pages in the book"
+            required
           /><br /><br />
           <label>Read</label>
-          <input type="checkbox" id="readCheckBox" />
+          <input type="checkbox" id="readCheckBox" required />
 
-          <input type="button" value="SEND" id="buttonInput" class="sendBtn" />
+          <input type="button" value="SEND" id="buttonInput" class="sendBtn" required />
           <button type="submit" class="clearBtn" value="Clear">Cancel</button>
         </form>
       </div>
